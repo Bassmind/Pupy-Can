@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 gem 'pg'
 gem 'cancan'
+gem "haml-rails"
 
 group :development do
 	gem 'debugger'

@@ -192,6 +192,7 @@ DEPENDENCIES
   factory_girl_rails
   faker
   guard-rspec
+  haml
   haml-rails
   jquery-rails
   launchy

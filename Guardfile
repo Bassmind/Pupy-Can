@@ -22,6 +22,15 @@ guard 'rspec', :all_after_pass => false, :cli => '--drb' do
   # Turnip features and steps
   watch(%r{^spec/acceptance/(.+)\.feature$})
   watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$})   { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'spec/acceptance' }
+
+  #On updating factories
+  watch(%r{^spec/factories/(.+)\.rb$}) do |m|
+    %W[
+      spec/models/#{m[1]}_spec.rb
+      spec/controllers/#{m[1].pluralize}_controller_spec.rb
+      spec/requests/#{m[1].pluralize}_spec.rb
+    ]
+  end
 end
 
 guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' }, :rspec_env => { 'RAILS_ENV' => 'test' } do

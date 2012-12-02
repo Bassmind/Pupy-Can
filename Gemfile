@@ -14,6 +14,8 @@ group :development, :test do
 	gem 'rspec-rails'
 	gem 'factory_girl_rails'
 	gem 'guard-rspec'
+	gem 'spork'
+	gem 'guard-spork'
 end
 
 group :test do
@@ -21,6 +23,10 @@ group :test do
 	gem 'capybara'
 	gem 'database_cleaner'
 	gem 'launchy'
+
+	#Guard dependencies
+	gem 'rb-inotify'
+	gem 'libnotify'
 end
 
 # Gems used only for assets and not required

@@ -1,2 +1,6 @@
 #aside
 	#menu
+		-if(@categories.count > 0)
+			-@categories.each do |c|
+				.category
+					= c.name

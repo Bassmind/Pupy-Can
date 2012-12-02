@@ -1,2 +1,4 @@
 #footer
 	#contact_info
+		-unless(@user.nil?)
+			%p= "Para alguna pregunta sobre algun producto, favor de contactar a #{@user.name} al telefono #{@user.phone}. O al correo #{@user.email}"

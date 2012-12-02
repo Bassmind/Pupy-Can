@@ -26,9 +26,9 @@ guard 'rspec', :all_after_pass => false, :cli => '--drb' do
   #On updating factories
   watch(%r{^spec/factories/(.+)\.rb$}) do |m|
     %W[
-      spec/models/#{m[1]}_spec.rb
-      spec/controllers/#{m[1].pluralize}_controller_spec.rb
-      spec/requests/#{m[1].pluralize}_spec.rb
+      spec/models/#{m[1].singularize}_spec.rb
+      spec/controllers/#{m[1]}_controller_spec.rb
+      spec/requests/#{m[1]}_spec.rb
     ]
   end
 end

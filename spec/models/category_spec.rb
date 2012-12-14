@@ -13,8 +13,8 @@ describe Category do
   	end
   end
 
-  context 'with invalid attributes' do
-  	it 'with no name' do
+  context 'is invalid' do
+  	it 'without name' do
   		subject { build(:category, name: nil) }
 
   		subject.should_not be_valid

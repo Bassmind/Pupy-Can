@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "Fronts" do
   describe "Home Page Load" do
-		it 'shows the principal home page for first time' do
+		it 'has some HTML attributes' do
 			visit root_path
 
 			#Cabecera	

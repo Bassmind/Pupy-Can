@@ -8,7 +8,7 @@ describe FrontController do
     end
 
     it 'is accessible for the admin' do
-    	create(:user)
+      create(:user)
 
     	get 'index'
       response.should be_success

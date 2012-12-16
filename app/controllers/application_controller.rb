@@ -11,8 +11,7 @@ class ApplicationController < ActionController::Base
   	end
 
   	reset_session
-  	flash[:notice] = "Password invalido"
-	  redirect_to root_path
+	  redirect_to login_path
 	  false
   end
 end

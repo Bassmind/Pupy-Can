@@ -3,6 +3,7 @@ Profe::Application.routes.draw do
   root :to => 'front#index'
 
   match '/admin' => 'admin#index', as: :admin
+  match '/login' => 'login#index', as: :login
 
   # Sample resource route with options:
   #   resources :products do

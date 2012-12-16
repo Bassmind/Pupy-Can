@@ -5,6 +5,7 @@ gem 'pg'
 gem 'cancan'
 gem "haml-rails"
 gem 'haml'
+gem 'bcrypt-ruby'
 
 group :development do
 	gem 'debugger'

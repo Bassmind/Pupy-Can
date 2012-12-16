@@ -1,2 +1,10 @@
 %h1 Login#index
 %p Find me in app/views/login/index.html.haml
+
+#login_form
+	= form_tag(action: 'check') do
+		= label_tag(:username_tag, "Usuario")
+		= text_field_tag(:name)
+		= label_tag(:password, "Password")
+		= text_field_tag(:password)
+		= submit_tag('Enviar')

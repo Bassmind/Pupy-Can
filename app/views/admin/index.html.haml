@@ -1,2 +1,9 @@
 %h1 Admin#index
 %p Find me in app/views/admin/index.html.haml
+
+#panel
+	#panel_title
+	#panel_list
+		-@categories.each_with_index do |category, i|
+			=label_tag("category_#{i+1}", category.name, class: "category")
+	#panel_products

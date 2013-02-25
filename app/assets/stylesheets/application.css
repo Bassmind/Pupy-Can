@@ -11,3 +11,18 @@
  *= require_self
  *= require_tree .
  */
+
+
+body{
+	font: 100% Verdana, Arial;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	/*background: url("fondo_perro.jpg") no-repeat center center fixed;*/
+	background-color: #FFFFCC;
+	color: #000000;
+}
+
+header{
+	h1: ;
+}
